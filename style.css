@@ -1,0 +1,109 @@
+body {background-color: blue;}
+
+.heder{ 
+	font-size: 120px;
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	left: 32%;
+ }
+
+.h2{left: 45%; }
+.h3{left: 59%; }
+
+.h2::before{
+	content: 'G';
+	color: #111;
+}
+ .h2::after {
+	content: 'H';
+	color: #111;
+}
+
+.an{
+	background-color: #fff;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	position: absolute;
+	top:62%;
+	left: 47%;
+	animation-name: test;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+	.an2{display: none;}
+
+@media (max-width: 480px ){ 
+	.heder{ 
+	font-size: 34px;
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	left: 22%;
+ }
+.h2{left: 42%; }
+.h3{left: 56%; }
+
+.h2::before{
+	content: 'G';
+	color: #111;
+}
+.h2::after{display: none;}
+.h3::before {
+	content: 'H';
+	color: #111;
+}
+
+.an{display: none;}
+.an2{display: block;
+	background-color: #fff;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	position: absolute;
+	top:34%;
+	left: 44%;
+	animation-name: test_an ;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes test_an{
+	2%{
+		top: 34%;
+	}
+	
+	70%{
+		background-color: #111;
+	}
+	100%{
+		top: 30%;
+		background-color: #111;
+	}
+}
+
+
+
+}
+
+@keyframes test{
+	2%{
+		top: 62%;
+	}
+	
+	70%{
+		background-color: #111;
+	}
+	100%{
+		top: 45%;
+		background-color: #111;
+	}
+}
+
+
+
+
+
